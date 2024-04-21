@@ -112,10 +112,13 @@
     align-items: center;
 }
 
-#quote {
+#quote-title {
     text-align: center;
-    width: 180px;
-    font-size: 48px;
+    width: 500px;
+    font-size: 40px;
+    font-family: 'Averia Serif Libre';
+    font-weight: bold;
+    color: white;
 }
 
 /*Mission Section */
@@ -148,6 +151,37 @@
     background-color: black;
     width: 1920px;
     height: 564px;
+    align-items: center;
+}
+
+#testimonial-title {
+    color: white;
+    font-family: 'Averia Serif Libre';
+    font-size: 40px;
+    width: 500px;
+    text-align: center;
+    padding-top: 125px;
+}
+
+#testimonial-text-1 {
+    color: white;
+    font-family: Jost;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 75px;
+    padding-left: 300px;
+    margin: auto;
+    width: 350px;
+}
+
+#testimonial-text-2 {
+    color: white;
+    font-family: Jost;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 75px;
+    margin-right: 300px;
+    width: 350px;
 }
 
 /*Contact Section */
@@ -162,34 +196,6 @@
     background-color: black;
     width: 1920px;
     height: 350px;
-}
-
-/*Text */
-.white-title {
-    color: white;
-    font-family: 'Averia Serif Libre';
-    font-size: 40px;
-    width: 500px;
-    text-align: center;
-}
-
-.black-title {
-    color: black;
-    font-family: 'Averia Serif Libre';
-    font-size: 40px;
-    margin-bottom: 40px;
-}
-
-.black-text {
-    color: black;
-    font-family: Jost;
-    font-size: 16px;
-}
-
-.white-text {
-    color: white;
-    font-family: Jost;
-    font-size: 16px;
 }
 
 /*Images */

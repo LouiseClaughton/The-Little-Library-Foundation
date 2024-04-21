@@ -7,6 +7,7 @@
 .flex-container {
     margin: 15px;
     padding-left: 150px;
+    width: 100%;
   }
   
   .row {
@@ -25,10 +26,14 @@
   
   .column-1 {
     height: 100px;
+    width: 600px;
+    margin: 0;
   }
   
   .column-2 {
     height: 100px;
+    width: 600px;
+    margin: 0;
   }
 
 /*Header Section */
@@ -88,19 +93,14 @@
     font-family: 'Averia Serif Libre';
     font-size: 40px;
     margin-bottom: 40px;
-    position: relative;
-    left: 100px;
-    top: 50px;
+    margin-top: 50px;
 }
 
 #story-text {
     color: black;
     font-family: Jost;
     font-size: 16px;
-    width: 700px;
-    position: relative;
-    left: 100px;
-    top: 50px;
+    width: 600px;
 }
 
 /*Quote Section */
@@ -123,7 +123,24 @@
     background-color: #F3F3F3;
     display: flex;
     width: 1920px;
-    height: 680px;
+    height: 620px;
+}
+
+#mission-title {
+    color: black;
+    font-family: 'Averia Serif Libre';
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    padding-top: 75px;
+}
+
+#mission-text {
+    color: black;
+    font-family: Jost;
+    font-size: 16px;
+    width: 600px;
+    margin-bottom: 50px;
 }
 
 /*Testimonials Section */
@@ -177,13 +194,20 @@
 
 /*Images */
 
-.image {
+.left-image {
     background-color: #cccccc;
     width: 700px;
     height: 500px;
     margin: 0 auto;
-    position: relative;
-    top: 40px;
+    margin-top: 40px;
+}
+
+.right-image {
+    background-color: #cccccc;
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 /*Buttons */

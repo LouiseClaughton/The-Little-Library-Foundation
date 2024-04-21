@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+/*Container Settings */
+.flex-container {
+    margin: 15px;
+    padding-left: 150px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .column-1 {
+    height: 100px;
+  }
+  
+  .column-2 {
+    height: 100px;
+  }
+
+/*Header Section */
+#header {
+    width: 1920px;
+    height: 650px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+#main-title {
+    color: white;
+    font-family: 'Averia Serif Libre';
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#main-text {
+    color: white;
+    font-family: 'Jost';
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#main-button {
+    background-color: white;
+    color: black;
+    border: 0px solid white;
+    border-radius: 30px;
+    float: left;
+    font-family: Jost;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+/*Our Story Section */
+#story-section {
+    background-color: #F3F3F3;
+    display: flex;
+    width: 1920px;
+    height: 610px;
+}
+
+/*Quote Section */
+#quote-section {
+    background-color: black;
+    display: flex;
+    height: 400px;
+    width: 1920px;
+    align-items: center;
+}
+
+#quote {
+    text-align: center;
+    width: 180px;
+    font-size: 48px;
+}
+
+/*Mission Section */
+#mission-section {
+    background-color: #F3F3F3;
+    display: flex;
+    width: 1920px;
+    height: 680px;
+}
+
+/*Testimonials Section */
+#testimonials-section {
+    background-color: black;
+    width: 1920px;
+    height: 564px;
+}
+
+/*Contact Section */
+#contact-section {
+    background-color: #F3F3F3;
+    width: 1920px;
+    height: 795px;
+}
+
+/*Footer */
+#footer {
+    background-color: black;
+    width: 1920px;
+    height: 350px;
+}
+
+/*Text */
+.white-title {
+    color: white;
+    font-family: 'Averia Serif Libre';
+    font-size: 40px;
+    width: 500px;
+    text-align: center;
+}
+
+.black-title {
+    color: black;
+    font-family: 'Averia Serif Libre';
+    font-size: 40px;
+}
+
+.black-text {
+    color: black;
+    font-family: Jost;
+    font-size: 16px;
+}
+
+.white-text {
+    color: white;
+    font-family: Jost;
+    font-size: 16px;
+}
+
+/*Images */
+
+.image {
+    background-color: #cccccc;
+    width: 700px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+/*Buttons */
+
+.button {
+    background-color: black;
+    color: white;
+    border: 0px solid black;
+    border-radius: 30px;
+    float: left;
+    font-family: Jost;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}

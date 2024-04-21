@@ -82,6 +82,27 @@
     height: 610px;
 }
 
+#story-title {
+    padding-top: 75px;
+    color: black;
+    font-family: 'Averia Serif Libre';
+    font-size: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+#story-text {
+    color: black;
+    font-family: Jost;
+    font-size: 16px;
+    width: 700px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
 /*Quote Section */
 #quote-section {
     background-color: black;
@@ -139,6 +160,7 @@
     color: black;
     font-family: 'Averia Serif Libre';
     font-size: 40px;
+    margin-bottom: 40px;
 }
 
 .black-text {
@@ -159,7 +181,9 @@
     background-color: #cccccc;
     width: 700px;
     height: 500px;
-    margin-top: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
 }
 
 /*Buttons */

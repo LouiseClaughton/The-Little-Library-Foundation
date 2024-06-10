@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <nav id="nav">
         <div id="navlink">
-            <a href="#home" class="navlink">Home</a>
-            <a href="#about" class="navlink">About Us</a>
-            <a href="#mission" class="navlink">Our Mission</a>
-            <a href="#donate" class="navlink">Donate</a>
+            <a href="#header" class="navlink">Home</a>
+            <a href="#story-section" class="navlink">Our Story</a>
+            <a href="#mission-section" class="navlink">Our Mission</a>
+            <a href="#contact-section" class="navlink">Donate</a>
         </div>
 
     </nav>
@@ -28,15 +29,15 @@
                     <!--Left Column-->
                     <div class="column">
                         <div class="column-1">
-                          <h1 id="main-title">We believe in the healing power of stories.</h1>
-                          <p id="main-text">We know that times can be tough for children in hospital. We aim to change that. Our mission is to teach all children 
+                          <h1 id="main-title" class="hidden">We believe in the healing power of stories.</h1>
+                          <p id="main-text" class="hidden">We know that times can be tough for children in hospital. We aim to change that. Our mission is to teach all children 
                           the healing power of stories by sharing donated books during their time in hospital. <br>
                           But we need your help. Donate your unwanted books, and help one more child uncover the power of stories!
                           </p>
-                          <button id="main-button" href="#">Donate</button>
+                          <button id="main-button" class="hidden" href="#">Donate</button>
                         </div>
                     </div>
-                    <!--Right Column - Left Empty so that content appears on the left half of the banner-->
+                    <!--Right Column - Left empty so that content appears on the left half of the banner-->
                     <div class="column">
                         <div class="column-2"></div>
                     </div>
@@ -51,14 +52,14 @@
                     <!--Left Column-->
                     <div class="column">
                         <div class="column-1">
-                          <div class="left-image"></div>
+                          <img src="images/About-Us.jpg" class="left-image hidden"></img>
                         </div>
                     </div>
                     <!--Right Column-->
                     <div class="column">
                         <div class="column-2">
-                            <h2 id="story-title">Our Story</h2>
-                            <p id="story-text">The Little Library Foundation was founded when a young child spent months in hospital, suffering from an illness that the doctors said she would never 
+                            <h2 id="story-title" class="hidden">Our Story</h2>
+                            <p id="story-text" class="hidden">The Little Library Foundation was founded when a young child spent months in hospital, suffering from an illness that the doctors said she would never 
                              recover from. She found solace only from the books her nurses brought her to read. The little girl spent every waking hour reading, diving 
                              head first into stories and folktales. She connected to the characters in the books, and imagined a better world, where every child suffering had countless 
                              worlds to call home. <br><br>
@@ -73,7 +74,7 @@
 
         <!--Quote Section-->
         <section id="quote-section">
-            <h2 id="quote-title">“In the darkest of nights, the power of stories keeps hope alight.”</h2>
+            <h2 id="quote-title" class="hidden">“In the darkest of nights, the power of stories keeps hope alight.”</h2>
         </section>
 
         <!--Our Mission Section-->
@@ -82,17 +83,17 @@
                 <div class="row">
                     <div class="column">
                         <div class="column-1">
-                          <h2 id="mission-title">Our Mission</h2>
-                          <p id="mission-text">We aim to make the lives of children stuck in hospital a little bit happier. The power of a story can go a long way for someone
+                          <h2 id="mission-title" class="hidden">Our Mission</h2>
+                          <p id="mission-text" class="hidden">We aim to make the lives of children stuck in hospital a little bit happier. The power of a story can go a long way for someone
                             who needs it. Hospitals can be boring and dreary, especially for excitable children. Help us break up the bad news with a spark of hope, and donate
                             your unwanted books today!
                           </p>
-                          <button class="button">DONATE</button>
+                          <button class="button hidden">DONATE</button>
                         </div>
                     </div>
                     <div class="column">
                         <div class="column-2">
-                          <div class="right-image"></div>
+                          <img src="images/Our-Mission.jpg" class="right-image hidden"></img>
                         </div>
                     </div>
                 </div>
@@ -103,12 +104,12 @@
         <section id="testimonials-section">
             <div class="flex-container">
                 <div class="row">
-                    <h2 id="testimonial-title">What Others Think</h2>
+                    <h2 id="testimonial-title" class="hidden">What Others Think</h2>
                 </div>
                 <div class="row">
                     <div class="column">
                         <div class="column-1">
-                            <p id="testimonial-text-1" style="font-weight: 600;">“The Little Library Foundation is doing such an important job - the least I can do is donate my 
+                            <p id="testimonial-text-1" class="hidden" style="font-weight: 600;">“The Little Library Foundation is doing such an important job - the least I can do is donate my 
                                 old books.” <br><br>
                                 <span style="font-style: italic;">Joanna Johnson</span>
                             </p>
@@ -116,7 +117,7 @@
                     </div>
                     <div class="column">
                         <div class="column-2">
-                            <p id="testimonial-text-2" style="font-weight: 600;">“I thought this was just another charity, but seeing the way my old books lit up that child’s 
+                            <p id="testimonial-text-2" class="hidden" style="font-weight: 600;">“I thought this was just another charity, but seeing the way my old books lit up that child’s 
                                 face made me realise how important The Little Library Foundation really is.”<br><br>
                                <span style="font-style: italic;">David Thornton</span>
                             </p>
@@ -129,9 +130,9 @@
         <!--Contact Section-->
         <section id="contact-section">
             <div>
-                <h2 id="contact-title">Donate</h2>
+                <h2 id="contact-title" class="hidden">Donate</h2>
             </div>
-            <div id="form">
+            <div id="form" class="hidden">
                 <form method="POST">
                     <input type="text" id="name" name="name" placeholder="Name">
                     <input type="text" id="email" name="email" placeholder="Email">

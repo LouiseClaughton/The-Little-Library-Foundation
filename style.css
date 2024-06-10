@@ -46,6 +46,7 @@
     position: fixed;
     text-align: right;
     border-bottom: 2px solid black;
+    z-index: 5;
 }
 
 #navlink {
@@ -72,9 +73,11 @@ a:hover {
 #header {
     width: 100%;
     height: 650px;
-    background-color: black;
+    background-image: url('images/hero-image-full.png');
     display: flex;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #main-title {
@@ -118,6 +121,7 @@ a:hover {
     display: flex;
     width: 100%;
     height: 610px;
+    padding-top: 80px;
 }
 
 #story-title {
@@ -138,7 +142,7 @@ a:hover {
 
 /*Quote Section */
 #quote-section {
-    background-color: black;
+    background-image: url('images/Candles.jpg.png');
     display: flex;
     height: 400px;
     width: 100%;
@@ -160,6 +164,7 @@ a:hover {
     display: flex;
     width: 100%;
     height: 620px;
+    padding-top: 80px;
 }
 
 #mission-title {
@@ -226,6 +231,7 @@ a:hover {
     background-color: #F3F3F3;
     width: 100%;
     height: 795px;
+    padding-top: 80px;
 }
 
 #contact-title {
@@ -335,4 +341,14 @@ input[type=text], select {
     cursor: pointer;
     margin: 0 auto;
     display: block;
+  }
+
+  /*** Animations ***/
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .show {
+    opacity: 1;
   }

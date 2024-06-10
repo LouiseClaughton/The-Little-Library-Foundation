@@ -3,6 +3,8 @@
     margin: 0 auto;
 }
 
+html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when clicking links */
+
 /*Container Settings */
 .flex-container {
     margin: 15px;
@@ -53,6 +55,21 @@
     margin-right: 50px;
 }
 
+#brand {
+    float: left;
+    color: black;
+    font-family: 'Averia Serif Libre';
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 15px 50px;
+    text-decoration: none;
+}
+
+#brand:hover {
+    cursor: pointer;
+}
+
 .navlink {
     display: inline-block;
     color: black;
@@ -61,14 +78,9 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
     margin: 10px;
 }
 
-a:hover {
-    color: white;
-    background-color: black;
-}
 /*Header Section */
 #header {
     width: 100%;

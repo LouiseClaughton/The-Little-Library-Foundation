@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    position: absolute;
+}
+
 html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when clicking links */
 
 /*Container Settings */

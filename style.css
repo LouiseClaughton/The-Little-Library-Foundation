@@ -413,6 +413,14 @@ input[type=text], select {
         width: auto;
     }
 
+    #testimonial-text-1 {
+        margin-right: 5px;
+    }
+
+    #testimonial-text-2 {
+        margin-left: 5px;
+    }
+
     #story-text,
     #mission-text {
         width: auto;

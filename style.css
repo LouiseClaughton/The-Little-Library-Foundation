@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
 }
 
 html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when clicking links */
@@ -8,35 +8,39 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
 /*Container Settings */
 .flex-container {
     margin: 15px;
-    padding-left: 150px;
+    padding-left: 9rem;
+    padding-right: 9rem;
     width: 100%;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.flex-child {
+    align-self: center;
+    justify-content: center;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
 }
   
 .column {
-    display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+    flex: 50%;
 }
-  
-.column-1 {
-    height: 100px;
-    width: 600px;
-    margin: 0;
+
+.testimonial-column { /* A seperate column system for the testimonials so the layout doesn't mess up on smaller screens */
+    flex-direction: column;
+    flex: 50%;
 }
-  
-.column-2 {
-    height: 100px;
-    width: 600px;
-    margin: 0;
+
+.column-left {
+    width: 50%;
+    float: left;
+    max-width: 500px;
 }
 
 /*Nav Bar */
@@ -45,7 +49,8 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
     height: 75px;
     width: 100%;
     background-color: white;
-    position: fixed;
+    position: sticky;
+    top: 0;
     text-align: right;
     border-bottom: 2px solid black;
     z-index: 5;
@@ -84,12 +89,12 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
 /*Header Section */
 #header {
     width: 100%;
-    height: 650px;
+    height: auto;
     background-image: url('images/hero-image-full.png');
     display: flex;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 150px;
+    padding-bottom: 120px;
 }
 
 #main-title {
@@ -132,15 +137,15 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
     background-color: #F3F3F3;
     display: flex;
     width: 100%;
-    height: 610px;
+    height: auto;
     padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 #story-title {
-    padding-top: 75px;
     color: black;
     font-family: 'Averia Serif Libre';
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     margin-top: 50px;
 }
@@ -148,7 +153,7 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
 #story-text {
     color: black;
     font-family: Jost;
-    font-size: 16px;
+    font-size: 1rem;
     width: 600px;
 }
 
@@ -156,9 +161,12 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
 #quote-section {
     background-image: url('images/Candles.jpg.png');
     display: flex;
-    height: 400px;
+    height: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
     width: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 #quote-title {
@@ -175,8 +183,9 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
     background-color: #F3F3F3;
     display: flex;
     width: 100%;
-    height: 620px;
+    height: auto;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 #mission-title {
@@ -185,7 +194,6 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
     font-size: 40px;
     margin-bottom: 40px;
     margin-top: 50px;
-    padding-top: 75px;
 }
 
 #mission-text {
@@ -196,12 +204,18 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
     margin-bottom: 50px;
 }
 
+.right-image {
+    float: right;
+}
+
 /*Testimonials Section */
 #testimonials-section {
     background-color: black;
     display: flex;
     width: 100%;
-    height: 564px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #testimonial-title {
@@ -211,9 +225,6 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
     font-family: 'Averia Serif Libre';
     font-weight: bold;
     color: white;
-    position: relative;
-    right: 100px;
-    top: 100px;
 }
 
 #testimonial-text-1 {
@@ -221,10 +232,10 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
     font-family: Jost;
     font-size: 16px;
     text-align: center;
-    padding-top: 75px;
-    padding-left: 300px;
-    margin-top: 100px;
     width: 350px;
+    margin: 0 auto;
+    padding-left: 300px;
+    padding-top: 50px;
 }
 
 #testimonial-text-2 {
@@ -232,35 +243,35 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
     font-family: Jost;
     font-size: 16px;
     text-align: center;
-    padding-top: 75px;
-    margin-right: 300px;
-    margin-top: 100px;
     width: 350px;
+    margin: 0 auto;
+    padding-right: 300px;
+    padding-top: 50px;
 }
 
 /*Contact Section */
 #contact-section {
     background-color: #F3F3F3;
     width: 100%;
-    height: 795px;
+    height: auto;
     padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
 }
 
 #contact-title {
     color: black;
     font-family: 'Averia Serif Libre';
     font-size: 40px;
-    width: 500px;
     text-align: center;
-    padding-top: 125px;
-    padding-bottom: 25px;
 }
 
 /*Footer */
 #footer {
     background-color: black;
     width: 100%;
-    height: 350px;
+    height: auto;
+    padding-bottom: 150px;
 }
 
 .footer-text {
@@ -269,24 +280,6 @@ html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when 
     font-size: 16px;
     text-align: center;
     padding-top: 75px;
-}
-
-/*Images */
-
-.left-image {
-    background-color: #cccccc;
-    width: 700px;
-    height: 500px;
-    margin: 0 auto;
-    margin-top: 40px;
-}
-
-.right-image {
-    background-color: #cccccc;
-    width: 700px;
-    height: 500px;
-    margin: 0 auto;
-    margin-top: 40px;
 }
 
 /*Buttons */
@@ -335,6 +328,7 @@ input[type=text], select {
     border-radius: 5px;
     padding: 20px;
     width: 800px;
+    margin: 0 auto;
   }
 
   button[type=submit] {
@@ -364,3 +358,114 @@ input[type=text], select {
   .show {
     opacity: 1;
   }
+
+  .responsive {
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+  }
+
+/*** Media Queries ***/
+
+/*xs*/
+@media (max-width: 475px){
+    .flex-container {
+        max-width: 475px; /* Container size shrinks with screen size, keeping the site responsive on all screen sizes */
+    }
+}
+
+/*s*/
+@media (max-width: 640px){
+    .flex-container {
+        max-width: 640px;
+    }
+}
+
+/* md */
+@media (max-width: 768px){
+    .flex-container {
+        max-width: 768px;
+    }
+
+    .column-left {
+        min-width: 378px;
+    }
+
+    .navlink {
+        display: none;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px){
+    .flex-container {
+        max-width: 1024px;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px){
+    .flex-container {
+        max-width: 1280px;
+    }
+}
+
+/* 2xl */
+
+@media (max-width: 1520px) {
+    .column { /* Stack columns vertically on smaller screens */
+        width: 100%;
+    }
+
+    .column-left { /* Make the header full width instead of half wide on smaller screens */
+        width: 100%;
+        max-width: none;
+        text-align: center;
+    }
+
+    #main-title,
+    #main-text {
+        text-align: center; /* Center the heading text and title, using ID's as this is where the alignment is originally set */
+        max-width: 818px;
+    }
+
+    #header {
+        background-color: black;
+        background-image: none;
+    }
+
+    #testimonial-text-1,
+    #testimonial-text-2 {
+        padding: 30px;
+    }
+
+    #form {
+        width: 90%;
+    }
+    
+    .responsive { /* Center images on smaller screens */
+        margin: 0 auto;
+        display: block;
+    }
+
+    .left-image,
+    .right-image {
+        float: none; /* Remove float from images so that they can be centered */
+    }
+
+    .text,
+    .title { /* Center text and titles on smaller screens */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .button,
+    #main-button {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        float: none;
+    }
+}

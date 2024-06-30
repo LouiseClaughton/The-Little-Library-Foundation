@@ -1,6 +1,9 @@
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box
 }
 
 body {
@@ -372,53 +375,18 @@ input[type=text], select {
 /*** Media Queries ***/
 
 /*xs*/
-@media (max-width: 475px){
+@media (min-width: 320px){
     .flex-container {
-        max-width: 475px; /* Container size shrinks with screen size, keeping the site responsive on all screen sizes */
-    }
-}
-
-/*s*/
-@media (max-width: 640px){
-    .flex-container {
-        max-width: 640px;
-    }
-}
-
-/* md */
-@media (max-width: 768px){
-    .flex-container {
-        max-width: 768px;
+        max-width: 320px; /* Container size shrinks with screen size, keeping the site responsive on all screen sizes */
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0 auto;
     }
 
-    .column-left {
-        min-width: 378px;
-    }
-
-    .navlink {
-        display: none;
-    }
-}
-
-/* lg */
-@media (max-width: 1024px){
-    .flex-container {
-        max-width: 1024px;
-    }
-}
-
-/* xl */
-@media (max-width: 1280px){
-    .flex-container {
-        max-width: 1280px;
-    }
-}
-
-/* 2xl */
-
-@media (max-width: 1520px) {
-    .column { /* Stack columns vertically on smaller screens */
+    .column,
+    .testimonial-column { /* Stack columns vertically on smaller screens */
         width: 100%;
+        min-width: 100%;
     }
 
     .column-left { /* Make the header full width instead of half wide on smaller screens */
@@ -433,6 +401,15 @@ input[type=text], select {
         max-width: 818px;
     }
 
+    #quote-title {
+        font-size: 30px;
+    }
+
+    #quote-section {
+        background-color: black;
+        background-image: none;
+    }
+
     #header {
         background-color: black;
         background-image: none;
@@ -441,6 +418,7 @@ input[type=text], select {
     #testimonial-text-1,
     #testimonial-text-2 {
         padding: 30px;
+        width: auto;
     }
 
     #form {
@@ -458,9 +436,13 @@ input[type=text], select {
     }
 
     .text,
+    #story-text,
+    #mission-text,
     .title { /* Center text and titles on smaller screens */
         text-align: center;
         margin: 0 auto;
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     .button,
@@ -471,5 +453,82 @@ input[type=text], select {
         margin-right: auto;
         margin-bottom: 40px;
         float: none;
+    }
+
+    #nav {
+        display: none;
+    }
+}
+
+/*xs*/
+@media (min-width: 475px){
+    .flex-container {
+        max-width: 475px; /* Container size shrinks with screen size, keeping the site responsive on all screen sizes */
+    }
+}
+
+/*s*/
+@media (min-width: 640px){
+    .flex-container {
+        max-width: 640px;
+    }
+}
+
+/* md */
+@media (min-width: 768px){
+    .flex-container {
+        max-width: 768px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .column-left {
+        min-width: 378px;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px){
+    .flex-container {
+        max-width: 1024px;
+    }
+
+    .navlink {
+        display: inline-block;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px){
+    .flex-container {
+        max-width: 1280px;
+    }
+}
+
+/* 2xl */
+
+@media (min-width: 1440px) {
+    .flex-container {
+        max-width: none;
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+
+    #header {
+        background-color: none;
+        background-image: url(images/hero-image-full.png);
+    }
+
+    #quote-section {
+        background-color: none;
+        background-image: url(images/Candles.jpg.png);
     }
 }

@@ -3,14 +3,19 @@
     margin: 0;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
     position: absolute;
+    left: -10px; 
+    right: -10px; /* Adds 10px space at either side of the body to allow for slightly larger screens and scrollbars */
+    overflow-x: hidden;
 }
 
-html { scroll-behavior: smooth; } /* Provides a smooth scrolling animation when clicking links */
+html { 
+    scroll-behavior: smooth; 
+} /* Provides a smooth scrolling animation when clicking links */
 
 /*Container Settings */
 .flex-container {
@@ -621,6 +626,10 @@ input[type=text], select {
 
 /*2xs*/
 @media (min-width: 320px) and (max-width: 474px) {
+    .body {
+        overflow-x: hidden;
+    }
+
     .flex-container {
         max-width: 320px; /* Container size shrinks with screen size, keeping the site responsive on all screen sizes */
         padding-left: 1rem;
@@ -647,7 +656,8 @@ input[type=text], select {
     }
 
     #quote-title {
-        font-size: 30px;
+        font-size: 20px;
+        width: 80%;
     }
 
     #quote-section {
